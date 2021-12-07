@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Individualka">
         <activity
+            android:name=".Ten"
+            android:exported="false" />
+        <activity
+            android:name=".NIne"
+            android:exported="false" />
+        <activity
+            android:name=".Eight"
+            android:exported="false" />
+        <activity
+            android:name=".Seven"
+            android:exported="false" />
+        <activity
+            android:name=".Six"
+            android:exported="false" />
+        <activity
+            android:name=".Five"
+            android:exported="false" />
+        <activity
+            android:name=".Four"
+            android:exported="false" />
+        <activity
+            android:name=".Three"
+            android:exported="false" />
+        <activity
+            android:name=".Two"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
