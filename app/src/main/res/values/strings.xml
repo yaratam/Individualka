@@ -11,14 +11,24 @@
     <string name="gday">We Wish you have a good day</string>
     <string name="gm">Good morning, Azim</string>
     <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
     <string name="Ease">Ease the mind into a restful night’s sleep with these deep, amblent tones.</string>
     <string name="narrating">Pick a Narrator</string>
     <string name="course">COURSE</string>
-    <string name="todo">TODO</string>
     <string name="male_voice">MALE VOICE</string>
     <string name="female_voice">FEMALE VOICE</string>
     <string name="acrobatics">We can learn how to recognize when our minds are doing their normal everyday acrobatics.</string>
     <string name="atencion">Focus Attention</string>
     <string name="CALMMMMMMMMM">7 DAYS OF CALM</string>
+    <string name="silencio">SILENCIO</string>
+    <string name="we_are_what_we_do">We are what we do</string>
+    <string name="thousand">Thousand of people are usign silencio for small meditations</string>
+    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="log_in">LOG IN</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="todo">TODO</string>
+    <string name="or_log_in_with_email">OR LOG IN WITH EMAIL</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="log_in">LOG IN</string>
 </resources>
