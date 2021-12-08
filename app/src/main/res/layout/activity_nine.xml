@@ -6,4 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".NIne">
 
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:fontFamily="@font/montserratbold"
+        android:text="Meditate"
+        android:textColor="@color/strong"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="336dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/oswaldlight"
+        android:text="@string/acrobatics"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="404dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/fotos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ImageView
+        android:layout_width="374dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/daily_calm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:layout_width="377dp"
+        android:layout_height="358dp"
+        android:background="@drawable/__dayds"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <ImageView
+        android:layout_width="414dp"
+        android:layout_height="112dp"
+        android:background="@drawable/footer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="755dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

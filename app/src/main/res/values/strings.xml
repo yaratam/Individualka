@@ -10,4 +10,15 @@
     <string name="days">Which day would you like to meditate?</string>
     <string name="gday">We Wish you have a good day</string>
     <string name="gm">Good morning, Azim</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="Ease">Ease the mind into a restful night’s sleep with these deep, amblent tones.</string>
+    <string name="narrating">Pick a Narrator</string>
+    <string name="course">COURSE</string>
+    <string name="todo">TODO</string>
+    <string name="male_voice">MALE VOICE</string>
+    <string name="female_voice">FEMALE VOICE</string>
+    <string name="acrobatics">We can learn how to recognize when our minds are doing their normal everyday acrobatics.</string>
+    <string name="atencion">Focus Attention</string>
+    <string name="CALMMMMMMMMM">7 DAYS OF CALM</string>
 </resources>
