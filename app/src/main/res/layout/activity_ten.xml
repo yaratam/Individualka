@@ -39,10 +39,10 @@
     <TextView
         android:id="@+id/textView24"
         android:layout_width="264dp"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:layout_marginTop="384dp"
         android:fontFamily="@font/montserratbold"
-        android:text="@string/atencion"
+        android:text="@string/daily_calm"
         android:textAlignment="center"
         android:textColor="@color/strong"
         android:textSize="34sp"

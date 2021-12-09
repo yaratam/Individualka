@@ -16,7 +16,8 @@
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/strelka" />
+        app:srcCompat="@drawable/strelka"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView5"
@@ -24,9 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="133dp"
         android:fontFamily="@font/montserratbold"
-        android:text="Create your account "
+        android:text="@string/create_your_account"
         android:textColor="@color/strong"
-        android:textSize="28dp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +41,8 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/gugl" />
+        app:srcCompat="@drawable/gugl"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView6"
@@ -48,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/montserratbold"
-        android:text="OR LOG IN WITH EMAIL"
+        android:text="@string/or_log_in_with_email"
         android:textColor="@color/light"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,10 +66,11 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/info" />
+        app:srcCompat="@drawable/info"
+        android:contentDescription="@string/todo" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/START"
         android:layout_width="374dp"
         android:layout_height="63dp"
         android:layout_marginTop="30dp"
@@ -75,7 +78,8 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/get_started" />
+        app:srcCompat="@drawable/get_started"
+        android:contentDescription="@string/start" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

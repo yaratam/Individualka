@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Four"
-    android:background="@drawable/bg3">
+    android:background="@drawable/bg3"
+    android:id="@+id/Four">
 
     <ImageView
         android:id="@+id/imageView7"
@@ -15,7 +16,8 @@
         android:background="@drawable/logo__white_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView8"

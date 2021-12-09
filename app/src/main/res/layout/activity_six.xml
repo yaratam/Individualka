@@ -32,14 +32,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/time2"
         android:layout_width="399dp"
         android:layout_height="212dp"
         android:layout_marginTop="29dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@drawable/time" />
+        app:srcCompat="@drawable/time"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView13"
@@ -47,13 +48,13 @@
         android:layout_height="60dp"
         android:layout_marginTop="23dp"
         android:fontFamily="@font/montserratbold"
-        android:text="@string/days"
+        android:text= "@string/days"
         android:textColor="@color/strong"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/time2" />
 
     <TextView
         android:id="@+id/textView14"
@@ -69,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/days"
         android:layout_width="374dp"
         android:layout_height="48dp"
         android:layout_marginTop="39dp"
@@ -77,10 +78,11 @@
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:srcCompat="@drawable/week" />
+        app:srcCompat="@drawable/week"
+        android:contentDescription="@string/todo" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/save"
         android:layout_width="374dp"
         android:layout_height="63dp"
         android:layout_marginTop="57dp"
@@ -88,20 +90,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/days"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/oswaldmedium"
-        android:text="NO THANKS"
+        android:text="@string/no_thanks"
         android:textColor="@color/strong"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toBottomOf="@+id/save" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

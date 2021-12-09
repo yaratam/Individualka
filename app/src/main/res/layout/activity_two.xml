@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/Email"
         android:layout_width="374dp"
         android:layout_height="146dp"
         android:layout_marginTop="40dp"
@@ -67,8 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/email"
-        android:contentDescription="
-" />
+        android:contentDescription="@string/email" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -78,7 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
         app:srcCompat="@drawable/login"
         android:contentDescription="@string/log_in" />
 
@@ -117,7 +116,4 @@
         app:layout_constraintStart_toEndOf="@+id/textView4"
         tools:layout_editor_absoluteY="833dp"
         tools:ignore="MissingConstraints" />
-
-
-    1+
 </androidx.constraintlayout.widget.ConstraintLayout>

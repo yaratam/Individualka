@@ -54,21 +54,21 @@
         android:contentDescription="@string/todo" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/Focus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/focus7"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="427dp" />
+        tools:layout_editor_absoluteY="537dp" />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/footer"
-        tools:layout_editor_absoluteY="535dp" />
+        app:menu="@menu/menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
