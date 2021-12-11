@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Five"
-    android:background="@drawable/bg5" >
+    android:background="@drawable/bg5"
+    tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/Silencio"
         android:layout_width="250dp"
         android:layout_height="76dp"
         android:layout_marginStart="20dp"
@@ -21,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/focusTopic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -31,7 +32,7 @@
         android:textColor="@color/light"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/Silencio" />
 
     <ImageView
         android:id="@+id/ReduceStress"

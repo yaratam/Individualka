@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Six">
+    tools:context=".Six"
+    tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/Timewhat"
         android:layout_width="379dp"
         android:layout_height="60dp"
         android:layout_marginTop="75dp"
@@ -20,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/ANyTime"
         android:layout_width="317dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -29,21 +30,21 @@
         android:text="@string/text6"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/Timewhat" />
 
     <ImageView
-        android:id="@+id/time2"
+        android:id="@+id/timeTable"
         android:layout_width="399dp"
         android:layout_height="212dp"
         android:layout_marginTop="29dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/ANyTime"
         app:srcCompat="@drawable/time"
         android:contentDescription="@string/todo" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/week"
         android:layout_width="374dp"
         android:layout_height="60dp"
         android:layout_marginTop="23dp"
@@ -54,10 +55,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time2" />
+        app:layout_constraintTop_toBottomOf="@+id/timeTable" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/Best"
         android:layout_width="250dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -67,7 +68,7 @@
         android:textColor="@color/light"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/timeTable" />
 
     <ImageView
         android:id="@+id/days"
@@ -77,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/Best"
         app:srcCompat="@drawable/week"
         android:contentDescription="@string/todo" />
 

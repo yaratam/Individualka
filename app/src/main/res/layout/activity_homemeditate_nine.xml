@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NIne">
+    tools:context=".NIne"
+    tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/Meditate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="66dp"
         android:fontFamily="@font/montserratbold"
-        android:text="Meditate"
+        android:text="@string/meditate"
         android:textColor="@color/strong"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/TextRecognize"
         android:layout_width="336dp"
         android:layout_height="44dp"
         android:layout_marginTop="15dp"
@@ -31,17 +32,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/Meditate" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/Categories"
         android:layout_width="404dp"
         android:layout_height="92dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/fotos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/TextRecognize"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:layout_width="374dp"
@@ -50,7 +52,8 @@
         android:background="@drawable/daily_calm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+        app:layout_constraintTop_toBottomOf="@+id/Categories"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/daysseven"
@@ -58,7 +61,9 @@
         android:layout_height="358dp"
         android:background="@drawable/__dayds"
         tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="435dp" />
+        tools:layout_editor_absoluteY="435dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/todo" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"

@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Seven">
+    tools:context=".Seven"
+    tools:ignore="MissingDefaultResource">
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/Logo"
         android:layout_width="133dp"
         android:layout_height="30dp"
         android:layout_marginTop="45dp"
@@ -18,7 +19,7 @@
         android:contentDescription="@string/todo" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/GM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -28,10 +29,10 @@
         android:textColor="@color/strong"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/GD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -41,25 +42,20 @@
         android:textColor="@color/light"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/GM" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/Basics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/basics7"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="30dp"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:id="@+id/Focus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/focus7"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="537dp" />
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -69,6 +65,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu" />
+        app:menu="@menu/menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:id="@+id/Focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/focus7"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

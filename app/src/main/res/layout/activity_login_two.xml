@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Two"
-    android:background="@drawable/bg2">
+    android:background="@drawable/bg2"
+    tools:ignore="MissingDefaultResource">
 
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/Strelka"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="20dp"
@@ -20,12 +21,12 @@
         android:contentDescription="@string/todo" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/Welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="133dp"
         android:fontFamily="@font/montserratbold"
-        android:text="@string/create_your_account"
+        android:text="@string/welcome_back"
         android:textColor="@color/strong"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,19 +34,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/Google"
         android:layout_width="374dp"
         android:layout_height="146dp"
         android:layout_marginTop="33dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome"
         app:srcCompat="@drawable/gugl"
         android:contentDescription="@string/todo" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/TextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -55,31 +56,66 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/Google" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/Email"
         android:layout_width="374dp"
-        android:layout_height="273dp"
+        android:layout_height="146dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/info"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/TextEmail"
+        app:srcCompat="@drawable/email"
+        android:contentDescription="@string/email" />
 
     <ImageView
-        android:id="@+id/START"
+        android:id="@+id/LogInButton"
         android:layout_width="374dp"
         android:layout_height="63dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/get_started"
-        android:contentDescription="@string/start" />
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:srcCompat="@drawable/login"
+        android:contentDescription="@string/log_in" />
 
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/forgot_password"
+        android:textColor="@color/strong"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogInButton" />
 
+    <TextView
+        android:id="@+id/Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/already_have_an_account"
+        android:textColor="@color/light"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/LogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/log_in"
+        android:textColor="#8E97FD"
+        app:layout_constraintStart_toEndOf="@+id/Account"
+        tools:layout_editor_absoluteY="833dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

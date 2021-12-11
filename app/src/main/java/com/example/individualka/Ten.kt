@@ -1,17 +1,18 @@
 
 package com.example.individualka
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.individualka.databinding.ActivityTenBinding
+import android.widget.ImageView
 
-class Ten : AppCompatActivity() {
-
-    private lateinit var binding:ActivityTenBinding
-
+class NIne : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityTenBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_Player_ten)
     }
+}
+
+class Ten {
+
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageView6" type="id">textview6</item>
+    <item name="Email" type="id">email</item>
+    <item name="password" type="id">password</item>
+    <item name="Account" type="id">account</item>
+    <item name="LogIn" type="id">logi</item>
+    <item name="LogInButton" type="id">LogInButton</item>
+    <item name="TextEmail" type="id">TextEmail</item>
+    <item name="Google" type="id">gogle</item>
+    <item name="Welcome" type="id">welcome</item>
+    <item name="Strelka" type="id">strelka</item>
+    <item name="CreateAcc" type="id">createaCC</item>
+    <item name="Four" type="id">Four</item>
+    <item name="Logo" type="id">Logo</item>
+    <item name="HiText" type="id">HiText</item>
+    <item name="Silencio" type="id">Silencio</item>
+    <item name="focusTopic" type="id" />
+    <item name="ReduceStress" type="id" />
+    <item name="Timewhat" type="id" />
+    <item name="ANyTime" type="id" />
+    <item name="timeTable" type="id" />
+    <item name="week" type="id" />
+    <item name="Best" type="id" />
+    <item name="days" type="id" />
+    <item name="save" type="id" />
+    <item name="GM" type="id" />
+    <item name="GD" type="id" />
+    <item name="Basics" type="id" />
+    <item name="Focus" type="id" />
+    <item name="Bodyound" type="id" />
+    <item name="Bodysound" type="id" />
+    <item name="Atention" type="id" />
+    <item name="MaleVoice" type="id" />
+    <item name="Narrator" type="id" />
+    <item name="favourites" type="id" />
+    <item name="Restful" type="id" />
+    <item name="Course" type="id" />
+    <item name="HappyMorning" type="id" />
+    <item name="Downloads" type="id" />
+    <item name="Likes" type="id" />
+    <item name="Meditate" type="id" />
+    <item name="TextRecognize" type="id" />
+    <item name="Categories" type="id" />
+    <item name="daysseven" type="id" />
+    <item name="bottom_nav" type="id" />
+    <item name="Close" type="id" />
+    <item name="Title" type="id" />
+    <item name="sevendys" type="id" />
+    <item name="spotify" type="id" />
+</resources>

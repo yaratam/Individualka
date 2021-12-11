@@ -8,7 +8,7 @@ import android.widget.ImageView
 class Two : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_two)
+        setContentView(R.layout.activity_login_two)
 
         val textView = findViewById<ImageView>(R.id.Email)
 

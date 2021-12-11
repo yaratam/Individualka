@@ -2,7 +2,7 @@
     <string name="app_name">Individualka</string>
     <string name="title4">Hi Azim, Welcome to Silencio</string>
     <string name="text4">Explore the app, Find some peace of mind to prepare for meditation.</string>
-    <string name="title5">What Brings you to Silent Moon?</string>
+    <string name="title5">What Brings you to Silencio?</string>
     <string name="focuus5">choose a topic to focuse on:</string>
     <string name="text6">Any time you can choose, but We recommend first thing in the morning.</string>
     <string name="medy">What time would you like to meditate?</string>
@@ -43,4 +43,6 @@
     <string name="azim">Azim</string>
     <string name="no_thanks">NO THANKS</string>
     <string name="daily_calm">Daily Calm</string>
+    <string name="happy_morning">Happy Morning</string>
+    <string name="meditate">Meditate</string>
 </resources>

@@ -1,16 +1,14 @@
 package com.example.individualka
 
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.constraintlayout.widget.ConstraintLayout
 
 class Seven : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_seven)
+        setContentView(R.layout.activity_choosemeditation_seven)
 
         val textView = findViewById<ImageView>(R.id.Focus)
 
