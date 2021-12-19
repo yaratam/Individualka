@@ -47,15 +47,15 @@
         android:id="@+id/week"
         android:layout_width="374dp"
         android:layout_height="60dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/montserratbold"
-        android:text= "@string/days"
+        android:text="@string/days"
         android:textColor="@color/strong"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeTable" />
+        app:layout_constraintTop_toBottomOf="@+id/Best" />
 
     <TextView
         android:id="@+id/Best"
@@ -74,13 +74,13 @@
         android:id="@+id/days"
         android:layout_width="374dp"
         android:layout_height="48dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Best"
-        app:srcCompat="@drawable/week"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/week"
+        app:srcCompat="@drawable/week" />
 
     <ImageView
         android:id="@+id/save"

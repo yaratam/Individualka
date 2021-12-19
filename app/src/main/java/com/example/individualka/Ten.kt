@@ -10,6 +10,12 @@ class NIne : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_Player_ten)
+
+        val textView = findViewById<ImageView>(R.id.Close)
+
+        textView.setOnClickListener{
+            startActivity(Intent(this,NIne::class.java))
+        }
     }
 }
 

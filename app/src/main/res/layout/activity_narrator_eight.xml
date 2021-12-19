@@ -49,7 +49,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/oswaldlight"
-        android:text="@string/Ease"
+        android:text="@string/ease"
         android:textColor="@color/light"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
