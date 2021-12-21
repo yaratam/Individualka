@@ -8,7 +8,7 @@
     android:background="@drawable/bg">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/logoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -22,29 +22,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/logoSVG"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="47dp"
         android:background="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/logoText"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/logo" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/illustration"
         android:layout_width="332dp"
         android:layout_height="242dp"
         android:layout_marginTop="83dp"
         android:background="@drawable/vector_log_iin_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/logoText"
         android:contentDescription="@string/illustration" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
@@ -54,10 +55,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/illustration" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/text3"
         android:layout_width="209dp"
         android:layout_height="52dp"
         android:layout_marginTop="14dp"
@@ -67,24 +68,24 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/title2"
         android:textColor="@color/light"
         />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/signUp"
         android:layout_width="374dp"
         android:layout_height="63dp"
         android:layout_marginTop="62dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/text3"
         app:srcCompat="@drawable/button"
         android:contentDescription="@string/button" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/acc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -95,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/signUp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -104,8 +105,8 @@
         android:fontFamily="@font/oswaldmedium"
         android:text="@string/log_in"
         android:textColor="#8E97FD"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toEndOf="@+id/acc"
+        app:layout_constraintTop_toBottomOf="@+id/signUp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

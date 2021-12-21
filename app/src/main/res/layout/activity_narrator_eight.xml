@@ -154,6 +154,7 @@
         android:contentDescription="@string/todo" />
 
     <ImageView
+        android:id="@+id/makeHappiness"
         android:layout_width="174dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"

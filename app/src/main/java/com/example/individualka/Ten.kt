@@ -18,7 +18,3 @@ class NIne : AppCompatActivity() {
         }
     }
 }
-
-class Ten {
-
-}
