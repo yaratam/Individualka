@@ -70,16 +70,70 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
-    <ImageView
-        android:id="@+id/spotify"
-        android:layout_width="374dp"
-        android:layout_height="188dp"
+
+    <ImageButton
+        android:id="@+id/fifnback"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/fifteenback"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sevendys" />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="40dp"
+        android:background="@drawable/play"
+        app:layout_constraintStart_toEndOf="@+id/fifnback"
+        app:layout_constraintTop_toBottomOf="@+id/sevendys"
+        android:contentDescription="@string/play" />
+
+    <ImageButton
+        android:id="@+id/fifnforw"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/fifteenforward"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/sevendys" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="319dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sevendys"
-        android:background="@drawable/spotify"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/play" />
 
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/playtime"
+        android:textColor="@color/strong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/playtimend"
+        android:textColor="@color/strong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toEndOf="@+id/starttime"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

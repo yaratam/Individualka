@@ -70,29 +70,207 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timeTable" />
 
-    <ImageView
-        android:id="@+id/days"
-        android:layout_width="374dp"
-        android:layout_height="48dp"
+
+    <ImageButton
+        android:id="@+id/sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:contentDescription="@string/todo"
+        android:background="@drawable/circlebutton1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/week"
-        app:srcCompat="@drawable/week" />
+        android:contentDescription="@string/button" />
 
-    <ImageView
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/su"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sunday"
+        app:layout_constraintEnd_toEndOf="@+id/sunday"
+        app:layout_constraintStart_toStartOf="@+id/sunday"
+        app:layout_constraintTop_toTopOf="@+id/sunday"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circlebutton1"
+        android:contentDescription="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@+id/sunday"
+        app:layout_constraintTop_toBottomOf="@+id/week" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/m"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/monday"
+        app:layout_constraintEnd_toEndOf="@+id/monday"
+        app:layout_constraintStart_toStartOf="@+id/monday"
+        app:layout_constraintTop_toTopOf="@+id/monday"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circlebutton1"
+        android:contentDescription="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toEndOf="@+id/monday"
+        app:layout_constraintTop_toBottomOf="@+id/week" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/t"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tuesday"
+        app:layout_constraintEnd_toEndOf="@+id/tuesday"
+        app:layout_constraintStart_toStartOf="@+id/tuesday"
+        app:layout_constraintTop_toTopOf="@+id/tuesday"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circlebutton1"
+        android:contentDescription="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/week" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/w"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wednesday"
+        app:layout_constraintEnd_toEndOf="@+id/wednesday"
+        app:layout_constraintStart_toStartOf="@+id/wednesday"
+        app:layout_constraintTop_toTopOf="@+id/wednesday"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circlebutton2"
+        android:contentDescription="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toEndOf="@+id/wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/week" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/th"
+        android:textColor="@color/purlish"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/thursday"
+        app:layout_constraintEnd_toEndOf="@+id/thursday"
+        app:layout_constraintStart_toStartOf="@+id/thursday"
+        app:layout_constraintTop_toTopOf="@+id/thursday"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circlebutton2"
+        android:contentDescription="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toEndOf="@+id/thursday"
+        app:layout_constraintTop_toBottomOf="@+id/week" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/f"
+        android:textColor="@color/purlish"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/friday"
+        app:layout_constraintEnd_toEndOf="@+id/friday"
+        app:layout_constraintStart_toStartOf="@+id/friday"
+        app:layout_constraintTop_toTopOf="@+id/friday"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
+        android:id="@+id/saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circlebutton1"
+        android:contentDescription="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/friday"
+        app:layout_constraintTop_toBottomOf="@+id/week" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/s"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/saturday"
+        app:layout_constraintEnd_toEndOf="@+id/saturday"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/saturday"
+        app:layout_constraintTop_toTopOf="@+id/saturday"
+        tools:ignore="SmallSp" />
+
+    <ImageButton
         android:id="@+id/save"
         android:layout_width="374dp"
         android:layout_height="63dp"
-        android:layout_marginTop="57dp"
-        android:background="@drawable/save"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/buttonshape"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/days"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/week" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/SAVE"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="@+id/save"
+        app:layout_constraintStart_toStartOf="@+id/save"
+        app:layout_constraintTop_toTopOf="@+id/save" />
 
     <TextView
         android:id="@+id/nothanks"

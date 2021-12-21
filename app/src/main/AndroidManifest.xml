@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.individualka">
 
     <application
@@ -11,7 +12,7 @@
         android:theme="@style/Theme.Individualka">
         <activity
             android:name=".Ten"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".NIne"
             android:exported="false" />

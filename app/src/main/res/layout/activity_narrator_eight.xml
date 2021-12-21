@@ -81,29 +81,69 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HappyMorning" />
 
+
     <ImageView
-        android:id="@+id/favourites"
-        android:layout_width="318dp"
-        android:layout_height="18dp"
+        android:id="@+id/imageView"
+        android:layout_width="18dp"
+        android:layout_height="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/favourites"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/serdechko"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Restful"
         android:contentDescription="@string/todo" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="22dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/naushniki"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/Restful" />
+
+    <TextView
+        android:id="@+id/listend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/oswaldlight"
+        android:text="@string/_213213_listened"
+        android:textColor="@color/light"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Restful" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/oswaldlight"
+        android:text="@string/_24_34343_favourites"
+        android:textColor="@color/light"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/Restful" />
 
     <TextView
         android:id="@+id/Narrator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/narrating"
         android:textColor="@color/strong"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/favourites" />
+        tools:layout_editor_absoluteY="555dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/MaleVoice"
@@ -132,37 +172,88 @@
 
 
     <ImageView
-        android:id="@+id/Atention"
-        android:layout_width="158dp"
+        android:id="@+id/playpurle"
+        android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/focus_attention"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/play_purle"
+        android:contentDescription="@string/todo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MaleVoice"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/MaleVoice" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/focus_attention"
+        android:textColor="@color/strong"
+        app:layout_constraintStart_toEndOf="@+id/playpurle"
+        app:layout_constraintTop_toBottomOf="@+id/MaleVoice" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/min"
+        android:textColor="@color/light"
+        app:layout_constraintStart_toStartOf="@+id/playpurle"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
 
     <ImageView
-        android:id="@+id/Bodysound"
-        android:layout_width="125dp"
+        android:id="@+id/playgret"
+        android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/body_scan"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/play_grey"
+        android:contentDescription="@string/todo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Atention"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintTop_toBottomOf="@+id/playpurle" />
 
-    <ImageView
-        android:id="@+id/makeHappiness"
-        android:layout_width="174dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/making_happines"
+    <TextView
+        android:id="@+id/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/bdad"
+        android:textColor="@color/strong"
+        app:layout_constraintStart_toEndOf="@+id/playgret"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/_5_min"
+        android:textColor="@color/light"
+        app:layout_constraintStart_toEndOf="@+id/playgret"
+        app:layout_constraintTop_toBottomOf="@+id/Body" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Bodysound"
-        android:contentDescription="@string/todo" />
+        app:menu="@menu/menu" >
 
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

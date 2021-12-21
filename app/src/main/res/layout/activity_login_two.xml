@@ -14,6 +14,9 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginStart="20dp"
+        android:text="@string/welcome_back"
+        android:textColor="@color/strong"
+        android:textSize="28sp"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -21,66 +24,100 @@
         android:contentDescription="@string/todo" />
 
     <TextView
+        android:textColor="@color/strong"
         android:id="@+id/Welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="133dp"
+        android:layout_marginTop="128dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/welcome_back"
-        android:textColor="@color/strong"
-        android:textSize="28sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/Google"
-        android:layout_width="374dp"
-        android:layout_height="146dp"
-        android:layout_marginTop="33dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome"
-        app:srcCompat="@drawable/gugl"
-        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/TextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/montserratbold"
         android:text="@string/or_log_in_with_email"
         android:textColor="@color/light"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Google" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <ImageView
         android:id="@+id/Email"
         android:layout_width="374dp"
         android:layout_height="146dp"
         android:layout_marginTop="40dp"
+        android:contentDescription="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextEmail"
-        app:srcCompat="@drawable/email"
-        android:contentDescription="@string/email" />
+        app:srcCompat="@drawable/email2" />
 
-    <ImageView
+    <EditText
+        android:id="@+id/enterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/Email"
+        app:layout_constraintTop_toTopOf="@+id/Email"
+        android:text="@string/email2"
+        android:fontFamily="@font/oswaldlight"
+        android:textColor="@color/light"
+        android:autofillHints="example@auca.kg"
+        android:inputType="text"
+        tools:ignore="LabelFor,TextFields" />
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:autofillHints="example@auca.kg"
+        android:fontFamily="@font/oswaldlight"
+        android:inputType="textPassword"
+        android:text="@string/password"
+        android:textColor="@color/light"
+        app:layout_constraintStart_toStartOf="@+id/Email"
+        app:layout_constraintTop_toTopOf="@+id/Email"
+        tools:ignore="LabelFor"
+        />
+
+    <ImageButton
         android:id="@+id/LogInButton"
         android:layout_width="374dp"
         android:layout_height="62dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonshape"
+        android:contentDescription="@string/log_in"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email"
-        app:srcCompat="@drawable/login"
-        android:contentDescription="@string/log_in" />
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LogInButton"
+        app:layout_constraintEnd_toEndOf="@+id/LogInButton"
+        app:layout_constraintStart_toStartOf="@+id/LogInButton"
+        app:layout_constraintTop_toTopOf="@+id/LogInButton"
+        app:layout_constraintVertical_bias="0.545" />
 
     <TextView
         android:id="@+id/password"
@@ -99,12 +136,13 @@
         android:id="@+id/Account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="@font/oswaldmedium"
         android:text="@string/already_have_an_account"
         android:textColor="@color/light"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
@@ -112,10 +150,65 @@
         android:id="@+id/LogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="@font/oswaldmedium"
         android:text="@string/log_in"
         android:textColor="#8E97FD"
         app:layout_constraintStart_toEndOf="@+id/Account"
-        tools:layout_editor_absoluteY="833dp"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="374dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/face"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_with_facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/facebook"
+        app:layout_constraintEnd_toEndOf="@+id/facebook"
+        app:layout_constraintStart_toStartOf="@+id/facebook"
+        app:layout_constraintTop_toTopOf="@+id/facebook"
+        android:textSize="19sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/oswaldmedium"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="374dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/gogl"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/continue_with_google"
+        android:textColor="@color/light"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+        app:layout_constraintStart_toStartOf="@+id/imageButton2"
+        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

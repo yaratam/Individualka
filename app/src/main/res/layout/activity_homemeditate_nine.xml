@@ -34,36 +34,233 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Meditate" />
 
-    <ImageView
-        android:id="@+id/Categories"
-        android:layout_width="404dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/fotos"
-        app:layout_constraintEnd_toEndOf="parent"
+
+
+    <ImageButton
+        android:id="@+id/All"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/all"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextRecognize"
         android:contentDescription="@string/todo" />
 
-    <ImageView
-        android:layout_width="374dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/daily_calm"
-        app:layout_constraintEnd_toEndOf="parent"
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/all"
+        android:textColor="@color/strong"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Categories"
+        app:layout_constraintTop_toBottomOf="@+id/All" />
+
+    <ImageButton
+        android:id="@+id/All3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/kids"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextRecognize"
         android:contentDescription="@string/todo" />
 
-    <ImageView
-        android:id="@+id/daysseven"
-        android:layout_width="377dp"
-        android:layout_height="358dp"
-        android:background="@drawable/__dayds"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="435dp"
-        tools:ignore="MissingConstraints"
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/kids"
+        android:textColor="@color/strong"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/All3" />
+
+
+    <ImageButton
+        android:id="@+id/MY"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/heartbutto"
+        app:layout_constraintStart_toEndOf="@+id/All3"
+        app:layout_constraintTop_toBottomOf="@+id/TextRecognize"
         android:contentDescription="@string/todo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/my"
+        android:textColor="@color/strong"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/MY" />
+
+    <ImageButton
+        android:id="@+id/All4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/anxious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextRecognize"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/anxious"
+        android:textColor="@color/strong"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/All4" />
+
+
+    <ImageButton
+        android:id="@+id/fancybut"
+        android:layout_width="366dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/fancybut2"
+        android:contentDescription="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextRecognize" />
+
+    <TextView
+        android:id="@+id/Daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/calm"
+        android:textColor="@color/strong"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fancybut"
+        app:layout_constraintEnd_toEndOf="@+id/fancybut"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="@+id/fancybut"
+        app:layout_constraintTop_toTopOf="@+id/fancybut"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/dec_12"
+        android:textColor="@color/light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fancybut"
+        app:layout_constraintStart_toStartOf="@+id/fancybut"
+        app:layout_constraintTop_toBottomOf="@+id/Daily"
+        app:layout_constraintVertical_bias="0.47" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/_3_10min"
+        android:textSize="11sp"
+        android:textColor="@color/light"
+        app:layout_constraintBottom_toBottomOf="@+id/fancybut"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/Daily" />
+
+
+    <ImageButton
+        android:id="@+id/pruple"
+        android:layout_width="176dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/pruple"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fancybut" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/calmmmmm"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pruple"
+        app:layout_constraintEnd_toEndOf="@+id/pruple"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/pruple"
+        app:layout_constraintTop_toTopOf="@+id/pruple"
+        app:layout_constraintVertical_bias="0.925" />
+
+
+    <ImageButton
+        android:id="@+id/mandarin"
+        android:layout_width="172dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/mandarin"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/pruple"
+        app:layout_constraintTop_toBottomOf="@+id/fancybut" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/relea"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mandarin"
+        app:layout_constraintEnd_toEndOf="@+id/mandarin"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/mandarin"
+        app:layout_constraintTop_toTopOf="@+id/mandarin"
+        app:layout_constraintVertical_bias="0.925" />
+
+
+    <ImageButton
+        android:id="@+id/ik"
+        android:layout_width="173dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ik"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pruple" />
+
+    <ImageButton
+        android:id="@+id/alatoo"
+        android:layout_width="176dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/alatoo"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/ik"
+        app:layout_constraintTop_toBottomOf="@+id/mandarin" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -74,5 +271,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

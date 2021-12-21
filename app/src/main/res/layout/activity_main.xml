@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/bg">
+    android:background="@drawable/bg"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/logoText"
@@ -27,11 +28,11 @@
         android:layout_height="30dp"
         android:layout_marginTop="47dp"
         android:background="@drawable/logo"
+        android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toEndOf="@+id/logoText"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/logo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/illustration"
@@ -39,10 +40,10 @@
         android:layout_height="242dp"
         android:layout_marginTop="83dp"
         android:background="@drawable/vector_log_iin_"
+        android:contentDescription="@string/illustration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoText"
-        android:contentDescription="@string/illustration" />
+        app:layout_constraintTop_toBottomOf="@+id/logoText" />
 
     <TextView
         android:id="@+id/title2"
@@ -65,48 +66,63 @@
         android:fontFamily="@font/oswaldlight"
         android:text="@string/textone"
         android:textAlignment="center"
+        android:textColor="@color/light"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title2"
-        android:textColor="@color/light"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
 
-    <ImageView
-        android:id="@+id/signUp"
-        android:layout_width="374dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="62dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3"
-        app:srcCompat="@drawable/button"
-        android:contentDescription="@string/button" />
 
     <TextView
         android:id="@+id/acc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/oswaldmedium"
         android:text="@string/already_have_an_account"
         android:textColor="@color/light"
         android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/angry_btn"
+        tools:layout_editor_absoluteX="101dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/log_in"
+        android:textColor="@color/button"
+        app:layout_constraintStart_toEndOf="@+id/acc"
+        app:layout_constraintTop_toBottomOf="@+id/angry_btn" />
+
+
+    <ImageButton
+        android:id="@+id/angry_btn"
+        android:layout_width="246dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/buttonshape"
+        android:contentDescription="@string/todo"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUp" />
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:fontFamily="@font/oswaldmedium"
-        android:text="@string/log_in"
-        android:textColor="#8E97FD"
-        app:layout_constraintStart_toEndOf="@+id/acc"
-        app:layout_constraintTop_toBottomOf="@+id/signUp" />
-
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/angry_btn"
+        app:layout_constraintEnd_toEndOf="@+id/angry_btn"
+        app:layout_constraintStart_toStartOf="@+id/angry_btn"
+        app:layout_constraintTop_toTopOf="@+id/angry_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

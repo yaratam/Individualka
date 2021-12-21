@@ -12,6 +12,7 @@ class Four : AppCompatActivity() {
 
         val textView = findViewById<ConstraintLayout>(R.id.Four)
 
+
         textView.setOnClickListener{
             startActivity(Intent(this,Five::class.java))
         }

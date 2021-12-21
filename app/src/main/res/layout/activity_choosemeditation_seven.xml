@@ -44,18 +44,337 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/GM" />
 
-    <ImageView
+
+    <ImageButton
+        android:id="@+id/cabbage"
+        android:layout_width="177dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cabbage"
+        android:contentDescription="@string/cabagebuton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GD" />
+
+
+    <TextView
         android:id="@+id/Basics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/basics"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/cabbage"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/cabbage"
+        app:layout_constraintTop_toTopOf="@+id/cabbage" />
+
+
+    <TextView
+        android:id="@+id/Course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/course"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cabbage"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="@+id/cabbage"
+        app:layout_constraintTop_toBottomOf="@+id/Basics" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/fivemin"
+        app:layout_constraintEnd_toEndOf="@+id/cabbage"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/cabbage"
+        app:layout_constraintTop_toBottomOf="@+id/Course"
+        android:textColor="@color/textlight"
+        android:fontFamily="@font/oswaldmedium"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="82dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/buttonshape2"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cabbage"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/Course" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/start"
+        android:textAllCaps="true"
+        android:textColor="@color/purlish"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/dude"
+        android:layout_width="177dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/girl"
+        android:contentDescription="@string/cabagebuton"
+        app:layout_constraintStart_toEndOf="@+id/cabbage"
+        app:layout_constraintTop_toBottomOf="@+id/GD" />
+
+
+    <TextView
+        android:id="@+id/Relaxation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/rexla"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/dude"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/dude"
+        app:layout_constraintTop_toTopOf="@+id/dude" />
+
+
+    <TextView
+        android:id="@+id/Music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/music"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/dude"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="@+id/dude"
+        app:layout_constraintTop_toBottomOf="@+id/Relaxation" />
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/fivemin"
+        app:layout_constraintEnd_toEndOf="@+id/dude"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/dude"
+        app:layout_constraintTop_toBottomOf="@+id/Music"
+        android:textColor="@color/purlish"
+        android:fontFamily="@font/oswaldmedium"
+        />
+
+    <ImageButton
+        android:id="@+id/startbut"
+        android:layout_width="82dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/buttonshape2"
+        android:backgroundTint="@color/purlish"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@+id/dude"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toEndOf="@+id/time2"
+        app:layout_constraintTop_toBottomOf="@+id/Music" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/start"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/startbut"
+        app:layout_constraintEnd_toEndOf="@+id/startbut"
+        app:layout_constraintStart_toStartOf="@+id/startbut"
+        app:layout_constraintTop_toTopOf="@+id/startbut" />
+
+    <ImageButton
+        android:id="@+id/fancybut"
+        android:layout_width="370dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fancybut"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/basics7"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/cabbage"
+        android:contentDescription="@string/button" />
+
+    <TextView
+        android:id="@+id/Daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/daily_thoughts"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fancybut"
+        app:layout_constraintEnd_toEndOf="@+id/fancybut"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="@+id/fancybut"
+        app:layout_constraintTop_toTopOf="@+id/fancybut"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/medita"
+        android:textColor="@color/textlight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fancybut"
+        app:layout_constraintStart_toStartOf="@+id/fancybut"
+        app:layout_constraintTop_toBottomOf="@+id/Daily"
+        app:layout_constraintVertical_bias="0.47" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/_3_10min"
+        android:textSize="11sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/fancybut"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/Daily" />
+
+    <TextView
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/rec"
+        android:textColor="@color/strong"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fancybut" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="162dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/zahir"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec" />
+
+    <TextView
+        android:id="@+id/focus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/focus"
+        android:textColor="@color/strong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+
+    <TextView
+        android:id="@+id/medita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/medita"
+        android:textColor="@color/light"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/focus2" />
+
+    <TextView
+        android:id="@+id/time3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/_3_10min"
+        android:textColor="@color/light"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/medita"
+        app:layout_constraintTop_toBottomOf="@+id/focus2" />
+
+
+    <ImageButton
+        android:id="@+id/korra"
+        android:layout_width="162dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/korra"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/rec" />
+
+
+    <TextView
+        android:id="@+id/Happiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/meditation"
+        android:textColor="@color/strong"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/korra" />
+
+    <TextView
+        android:id="@+id/medita2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/medita"
+        android:textColor="@color/light"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/time3"
+        app:layout_constraintTop_toBottomOf="@+id/Happiness" />
+
+    <TextView
+        android:id="@+id/time4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswaldmedium"
+        android:text="@string/_3_10min"
+        android:textColor="@color/light"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/medita2"
+        app:layout_constraintTop_toBottomOf="@+id/Happiness" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -69,17 +388,5 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <ImageView
-        android:id="@+id/Focus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
-        android:contentDescription="@string/todo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/focus7"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
